@@ -1,0 +1,48 @@
+.Footer{
+    background-color: rgba(236, 233, 233, 0.485);
+    border-bottom:  "1px solid #ccc";
+    padding: "10px 0";
+}
+
+.parint{
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.icon{
+    width: 37px;
+    height: 37px;
+    margin-bottom: 3px;
+}
+
+.distance{
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: rgba(147, 144, 144, 0.627);
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#select{
+    width: 100px;
+    background-color:rgba(236, 233, 233, 0.485);
+    border:none;
+    text-align: center;
+}
+
+.text-success {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .nav-link-custom {
+    margin-right: 50px; /* adjust spacing as you like */
+  }
+  
+
+  .App-SideNav a {
+  display: block;
+}
