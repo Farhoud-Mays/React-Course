@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Container, Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav, Row, Col } from "react-bootstrap";
 
 function CustomNavbar() {
   const [activeLink, setActiveLink] = useState("home"); // default active
@@ -10,6 +10,7 @@ function CustomNavbar() {
   };
 
   return (
+    // className="py-3"
     <Navbar expand="md" bg="white" className="py-3">
       <Container>
         <Navbar.Brand href="#home">
@@ -25,10 +26,12 @@ function CustomNavbar() {
 
         <Navbar.Collapse id="basic-navbar-nav">
           {/* Center Nav Links */}
+          {/* mx-auto  */}
           <Nav
             className="mx-auto text-uppercase fw-bold"
             activeKey={activeLink}
             onSelect={handleSelect}
+            mx-auto
           >
             <Nav.Link
               eventKey="home"
@@ -78,7 +81,10 @@ function CustomNavbar() {
           </Nav>
 
           {/* Right Icons */}
-          <div className="d-flex align-items-center gap-3">
+          <Col
+            md={6}
+            className="d-flex justify-content-end align-items-center gap-3"
+          >
             <img src="./image/heart-icon.png" alt="Wishlist" width={20} />
             <div className="position-relative">
               <img src="./image/cart-icon.png" alt="Cart" width={25} />
@@ -92,7 +98,7 @@ function CustomNavbar() {
             <span className="text-dark">
               item: <strong>$150.00</strong>
             </span>
-          </div>
+          </Col>
         </Navbar.Collapse>
       </Container>
     </Navbar>

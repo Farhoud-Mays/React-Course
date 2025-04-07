@@ -1,8 +1,18 @@
-.Footer{
-    background-color: rgba(236, 233, 233, 0.485);
-    border-bottom:  "1px solid #ccc";
-    padding: "10px 0";
+.my-global-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center everything horizontally */
+    padding: 20px;
+  }
+  
+
+.Footer {
+  background-color: rgba(236, 233, 233, 0.485);
+  border-bottom: "1px solid #ccc";
+  padding: "10px 0";
 }
+
 
 .parint{
     justify-content:center;

@@ -9,6 +9,7 @@ function Footer() {
         <Container>
           <Row>
             {/* Left Side */}
+            {/* d-flex justify-content-end  */}
             <Col md={6} d-flex justify-content-end align-items-center>
               <img
                 src="/image/Email_Icon.png"
